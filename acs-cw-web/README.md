@@ -1,16 +1,46 @@
-# React + Vite
+## Things to build
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Search Functionality
 
-Currently, two official plugins are available:
+- **Property Type Filter**: Search for Houses, Flats, or Any type
+- **Price Range**: Slider-based min/max price filter (£100,000 - £1,000,000)
+- **Bedrooms**: Min and max bedroom count selection
+- **Date Added**: Search by date range (from/to dates)
+- **Postcode Area**: Filter by first part of postcode (BR1, NW1, SE1, SW1)
+- **Multi-Criteria Search**: Combine any 1-5 criteria simultaneously
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Property Display
 
-## React Compiler
+- **Property Cards**: Visual cards with images, price, location, and key details
+- **Image Gallery**: Full gallery with 6-8 images per property
+- **Lightbox View**: Click to expand images in fullscreen
+- **Thumbnail Navigation**: Quick image selection via thumbnails
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### Favorites System
 
-## Expanding the ESLint configuration
+- **Drag & Drop**: Drag property cards to add to favorites
+- **Button Add**: Click the Save button to add to favorites
+- **Duplicate Prevention**: Properties can only be added once
+- **Remove Items**: Remove by clicking X button or dragging out
+- **Clear All**: One-click clear all favorites
+- **Persistence**: Favorites saved in localStorage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Property Details Page
+
+- **Large Image Gallery**: Main image with navigation arrows
+- **React Tabs**: Description, Floor Plan, and Google Map tabs
+- **Key Features**: Type, bedrooms, postcode, date added
+- **Add to Favorites**: Button and drag support on property page
+
+### Responsive Design
+
+- **Desktop**: Three-column layout (filters | results | favorites)
+- **Tablet** (≤1024px): Two-column layout with adapted sidebar
+- **Mobile** (≤768px): Single-column stacked layout
+- **Touch-Friendly**: Optimized for touch devices
+
+### Security
+
+- **Content Security Policy (CSP)**: Comprehensive headers in index.html
+- **XSS Protection**: DOMPurify sanitization for user content
+- **React JSX Encoding**: Automatic HTML entity encoding
