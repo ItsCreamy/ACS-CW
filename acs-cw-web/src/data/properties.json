@@ -1,35 +1,182 @@
-{
-	"properties": [
-        {
-            "id":"prop1",
-			"type":"House",
-            "bedrooms":3,
-			"price":750000,
-			"tenure":"Freehold",
-			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
-			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
-			"picture":"images/prop1pic1small.jpg",
-			"url":"properties/prop1.html",
-            "added": {
-                "month":"October",
-                "day":12,
-                "year":2022
-            }
-        },
-		{
-            "id":"prop2",
-			"type":"Flat",
-            "bedrooms":2,
-			"price":399995,
-			"tenure":"Freehold",
-			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
-			"location":"Crofton Road Orpington BR6",
-			"picture":"images/prop2pic1small.jpg",
-			"url":"properties/prop2.html",
-            "added": {
-                "month":"September",
-                "day":14,
-                "year":2022
-            }
-        }
-]}
+[
+  {
+    "id": "prop1",
+      "type": "House",
+      "price": 750000,
+      "bedrooms": 3,
+      "dateAdded": "2022-10-12",
+      "postcode": "BR5",
+      "location": "Petts Wood Road, Petts Wood, Orpington BR5",
+      "address": "14 Petts Wood Road, Orpington, BR5 1LB",
+      "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station.",
+      "longDescription": "The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior. The garden extends to approx 100ft with a large patio area perfect for summer dining.",
+      "tenure": "Freehold",
+      "councilTaxBand": "E",
+      "images": [
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800",
+        "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800"
+      ],
+      "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19926.49548483569!2d0.063!3d51.393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIzJzM0LjgiTiAwwrAwNCcwMC4wIkU!5e0!3m2!1sen!2suk!4v1600000000000!5m2!1sen!2suk"
+  },
+  {
+    "id": "prop2",
+      "type": "Flat",
+      "price": 399995,
+      "bedrooms": 2,
+      "dateAdded": "2022-09-14",
+      "postcode": "BR6",
+      "location": "Crofton Road Orpington BR6",
+      "address": "Flat 4, The Cedars, Crofton Road, Orpington BR6 8AE",
+      "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat.",
+      "longDescription": "The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. Wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.",
+      "tenure": "Freehold",
+      "councilTaxBand": "C",
+      "images": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
+        "https://images.unsplash.com/photo-1630699144867-37acec97df5a?w=800",
+        "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"
+      ],
+      "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19928.123456!2d0.058!3d51.385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIzJzEwLjAiTiAwwrAwMyczMC4wIkU!5e0!3m2!1sen!2suk!4v1600000000000!5m2!1sen!2suk"
+  },
+  {
+    "id": "prop3",
+    "type": "House",
+    "price": 650000,
+    "bedrooms": 5,
+    "dateAdded": "2025-09-20",
+    "postcode": "BR1",
+    "location": "Bromley South",
+    "address": "78 Oakwood Drive, Bromley BR1 5RT",
+    "description": "Luxury 5-bed detached villa with double garage and stunning landscaped gardens.",
+    "longDescription": "An expansive and immaculately presented detached family home set within generous private grounds. This exceptional property features five double bedrooms including a master suite with dressing room and luxury en-suite bathroom. The ground floor comprises an impressive entrance hall, formal lounge with feature fireplace, separate dining room, large family kitchen/breakfast room, utility room, and home office. Additional highlights include a dedicated home cinema room, fully equipped gym, and wine cellar. The property has been recently renovated to the highest standards with smart home technology throughout. Outside, the beautifully landscaped gardens include a patio terrace, manicured lawn, and mature specimen trees. Triple garage with electric doors and ample driveway parking for multiple vehicles.",
+    "tenure": "Freehold",
+    "councilTaxBand": "G",
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800"
+    ],
+    "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.9876543210!2d0.0189!3d51.3987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a9e1234567!2sBromley%20South!5e0!3m2!1sen!2suk!4v1234567890"
+  },
+  {
+    "id": "prop4",
+    "type": "Flat",
+    "price": 275000,
+    "bedrooms": 1,
+    "dateAdded": "2025-12-01",
+    "postcode": "NW1",
+    "location": "Regent's Park, London",
+    "address": "Park Vista Apartments, 23 Albany Street, NW1 4EF",
+    "description": "Cozy 1-bed studio apartment just steps away from beautiful Regent's Park.",
+    "longDescription": "Ideal for professionals seeking a peaceful retreat in central London, this charming studio apartment offers the perfect blend of comfort and convenience. Located on the third floor of a well-maintained mansion block, the property features a bright and airy living space with large windows overlooking the tree-lined street. The modern fitted kitchen includes integrated appliances and sleek granite worktops. The bedroom area accommodates a king-size bed with built-in fitted wardrobes providing excellent storage. The contemporary bathroom features a walk-in shower and heated towel rail. Regent's Park is just a 2-minute walk away, offering 410 acres of greenery for morning jogs or weekend relaxation. Great Portland Street and Regent's Park tube stations are both within easy reach, providing quick access to the West End and City.",
+    "tenure": "Leasehold (95 years remaining)",
+    "councilTaxBand": "C",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+      "https://images.unsplash.com/photo-1630699144867-37acec97df5a?w=800",
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=800",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800"
+    ],
+    "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.1234567890!2d-0.1478!3d51.5256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad1234567!2sRegent%27s%20Park!5e0!3m2!1sen!2suk!4v1234567890"
+  },
+  {
+    "id": "prop5",
+    "type": "House",
+    "price": 550000,
+    "bedrooms": 3,
+    "dateAdded": "2025-10-05",
+    "postcode": "SE1",
+    "location": "Southbank, London",
+    "address": "12 Riverside Terrace, Southbank, SE1 9PD",
+    "description": "Contemporary 3-bed townhouse with roof terrace and views of the Thames.",
+    "longDescription": "This striking modern townhouse offers exceptional living space across three floors in one of London's most desirable riverside locations. The ground floor features a double-height entrance hall and open-plan kitchen/dining area with bi-fold doors leading to a private courtyard garden. The first floor comprises a generous living room with feature gas fireplace and access to a Juliet balcony overlooking the Thames path. The second floor houses two double bedrooms sharing a family bathroom, while the top floor is devoted entirely to the master suite with walk-in wardrobe, luxury en-suite, and direct access to the stunning roof terrace with panoramic views of the city skyline. Located just minutes from the Tate Modern, National Theatre, and South Bank cultural quarter, with Waterloo and Southwark stations both within walking distance.",
+    "tenure": "Freehold",
+    "councilTaxBand": "F",
+    "images": [
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800"
+    ],
+    "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5678901234!2d-0.1089!3d51.5064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c1234567!2sSouthbank!5e0!3m2!1sen!2suk!4v1234567890"
+  },
+  {
+    "id": "prop6",
+    "type": "Flat",
+    "price": 400000,
+    "bedrooms": 2,
+    "dateAdded": "2025-11-20",
+    "postcode": "SE1",
+    "location": "Borough, London",
+    "address": "The Old Warehouse, 45 Bermondsey Street, SE1 3XF",
+    "description": "Stylish warehouse conversion featuring exposed brickwork and high ceilings in historic Borough.",
+    "longDescription": "A truly unique 2-bedroom apartment situated within a stunning Victorian warehouse conversion in the heart of trendy Borough. This exceptional property retains many original features including exposed brick walls, cast-iron columns, original timber beams, and impressive double-height ceilings reaching up to 4 meters. The open-plan living area is bathed in natural light from the oversized industrial windows and includes a bespoke kitchen with breakfast bar, premium appliances, and ample storage. Both bedrooms are generously proportioned doubles with fitted wardrobes. The contemporary bathroom features rainfall shower, freestanding bathtub, and designer fixtures. Additional benefits include secure gated parking, bike storage, and residents' rooftop terrace. Just moments from Borough Market, London Bridge station, and the vibrant restaurant scene of Bermondsey Street.",
+    "tenure": "Leasehold (150 years remaining)",
+    "councilTaxBand": "E",
+    "images": [
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=800",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800",
+      "https://images.unsplash.com/photo-1630699144867-37acec97df5a?w=800",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+    ],
+    "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.8765432109!2d-0.0832!3d51.5012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d1234567!2sBorough!5e0!3m2!1sen!2suk!4v1234567890"
+  },
+  {
+    "id": "prop7",
+    "type": "House",
+    "price": 800000,
+    "bedrooms": 6,
+    "dateAdded": "2025-08-15",
+    "postcode": "SW1",
+    "location": "Chelsea, London",
+    "address": "18 Eaton Place, Chelsea, SW1W 9LN",
+    "description": "Grand 6-bed Georgian residence in prestigious Chelsea with staff quarters and wine cellar.",
+    "longDescription": "An exceptional Grade II listed Georgian townhouse situated on one of Chelsea's most prestigious garden squares. This magnificent six-bedroom family home has been meticulously restored to combine period elegance with contemporary luxury. The property is arranged over five floors accessed by a sweeping central staircase with original wrought iron balustrade. Principal reception rooms feature stunning proportions with ornate ceiling roses, marble fireplaces, and floor-to-ceiling sash windows overlooking the private communal gardens. The basement level includes a professional-grade kitchen/breakfast room, temperature-controlled wine cellar, media room, and staff quarters. The upper floors comprise six generous bedrooms including a spectacular master suite with dressing room and marble bathroom. Additional features include a rear patio garden, garage, and access to the beautiful private gardens. Sloane Square tube station is just a 5-minute walk away.",
+    "tenure": "Freehold",
+    "councilTaxBand": "H",
+    "images": [
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800",
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800"
+    ],
+    "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.2345678901!2d-0.1567!3d51.4923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760521234567!2sChelsea!5e0!3m2!1sen!2suk!4v1234567890"
+  }
+]
