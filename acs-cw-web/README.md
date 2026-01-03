@@ -44,3 +44,31 @@
 - **Content Security Policy (CSP)**: Comprehensive headers in index.html
 - **XSS Protection**: DOMPurify sanitization for user content
 - **React JSX Encoding**: Automatic HTML entity encoding
+
+## Project Structure
+
+cw-demo/
+├── public/ # Static assets
+├── src/
+│ ├── **mocks**/ # Jest mocks
+│ ├── **tests**/ # Jest test files
+│ ├── components/ # React components
+│ │ ├── FavoritesList.jsx
+│ │ ├── PropertyCard.jsx
+│ │ └── SearchFilter.jsx
+│ ├── context/ # React Context providers
+│ │ └── FavoritesContext.jsx
+│ ├── data/ # JSON data
+│ │ └── properties.json
+│ ├── pages/ # Page components
+│ │ ├── PropertyPage.jsx
+│ │ └── SearchPage.jsx
+│ ├── App.jsx # Main app component
+│ ├── index.css # Global styles
+│ ├── main.jsx # React entry point
+│ └── setupTests.js # Jest setup
+├── .babelrc # Babel configuration
+├── index.html # HTML template with CSP
+├── package.json # Dependencies and scripts
+├── vite.config.js # Vite configuration
+└── README.md # This file
