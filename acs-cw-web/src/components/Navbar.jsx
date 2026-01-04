@@ -15,7 +15,7 @@ function Navbar() {
                 <Link to="/" className="logo-link">
                     <h1 className="app-title">
                         <span className="logo-icon">🏠</span>
-                        Estate Agent Pro
+                        Property Pro
                     </h1>
                 </Link>
                 
