@@ -1,0 +1,152 @@
+/* 
+   SearchFilter.css - Styles for the search filter panel
+   The left sidebar with search options
+*/
+
+/* Main panel container */
+.search-panel {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Panel title */
+.search-panel h3 {
+    font-size: 1.25rem;
+    color: #003366;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #003366;
+}
+
+/* Each form field group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Price range display */
+.price-range-group .price-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #003366;
+}
+
+/* rc-slider customization */
+.rc-slider {
+    margin: 10px 0;
+}
+
+/* Bedroom selects row */
+.bedrooms-group .bedroom-selects {
+    display: flex;
+    gap: 12px;
+}
+
+.bedroom-select {
+    flex: 1;
+}
+
+.select-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+/* Date picker section */
+.date-group .date-pickers {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.date-picker-wrapper {
+    flex: 1;
+}
+
+/* Date input styling */
+.date-widget {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.date-widget:focus {
+    border-color: #003366;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
+}
+
+/* Search and reset buttons */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+/* Main search button */
+.search-btn {
+    flex: 1;
+    background: linear-gradient(135deg, #003366 0%, #004080 100%);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.search-btn:hover {
+    background: linear-gradient(135deg, #004080 0%, #0055a5 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 51, 102, 0.3);
+}
+
+/* Reset button */
+.reset-btn {
+    background: #e9ecef;
+    color: #333;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.reset-btn:hover {
+    background: #dee2e6;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .search-panel {
+        padding: 16px;
+    }
+    
+    .bedrooms-group .bedroom-selects {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .button-group {
+        flex-direction: column;
+    }
+}
