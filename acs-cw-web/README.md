@@ -47,24 +47,41 @@
 
 ## Project Structure
 
-cw-demo/
+acs-cw-web/
 ├── public/ # Static assets
 ├── src/
-│ ├── **mocks**/ # Jest mocks
+│ ├── **mocks**/ # Jest mocks for testing
+│ │ ├── fileMock.js
+│ │ ├── react-dnd.js
+│ │ └── react-dnd-html5-backend.js
 │ ├── **tests**/ # Jest test files
-│ ├── components/ # React components
-│ │ ├── FavoritesList.jsx
-│ │ ├── PropertyCard.jsx
-│ │ └── SearchFilter.jsx
+│ │ ├── components.test.jsx
+│ │ ├── favorites.test.js
+│ │ ├── properties.test.js
+│ │ ├── search.test.js
+│ │ └── utils.test.js
+│ ├── components/ # Reusable React components
+│ │ ├── FavoritesList.jsx # Favorites sidebar with drag-drop
+│ │ ├── FavoritesList.css
+│ │ ├── Footer.jsx # Page footer
+│ │ ├── Footer.css
+│ │ ├── Navbar.jsx # Navigation bar
+│ │ ├── Navbar.css
+│ │ ├── PropertyCard.jsx # Property card for search results
+│ │ ├── PropertyCard.css
+│ │ ├── SearchFilter.jsx # Search form with filters
+│ │ └── SearchFilter.css
 │ ├── context/ # React Context providers
-│ │ └── FavoritesContext.jsx
+│ │ └── FavoritesContext.jsx # Global favorites state
 │ ├── data/ # JSON data
-│ │ └── properties.json
+│ │ └── properties.json # 7 property listings
 │ ├── pages/ # Page components
-│ │ ├── PropertyPage.jsx
-│ │ └── SearchPage.jsx
-│ ├── App.jsx # Main app component
-│ ├── index.css # Global styles
+│ │ ├── PropertyPage.jsx # Property details page
+│ │ ├── PropertyPage.css
+│ │ ├── SearchPage.jsx # Main search page
+│ │ └── SearchPage.css
+│ ├── App.jsx # Main app with routing
+│ ├── index.css # Base/global styles
 │ ├── main.jsx # React entry point
 │ └── setupTests.js # Jest setup
 ├── .babelrc # Babel configuration
