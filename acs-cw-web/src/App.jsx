@@ -1,7 +1,7 @@
 // App Component - Main entry point for the application
 // Sets up routing, providers, and layout
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { FavoritesProvider } from './context/FavoritesContext';
