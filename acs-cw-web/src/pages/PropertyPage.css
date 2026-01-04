@@ -1,0 +1,571 @@
+/* 
+   PropertyPage.css - Styles for the property details page
+   Includes gallery, info section, tabs, and lightbox
+*/
+
+/* Main container */
+.property-details {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Not found message */
+.property-not-found {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.not-found-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.back-btn {
+    display: inline-block;
+    background: #003366;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Breadcrumb link */
+.breadcrumb {
+    margin-bottom: 20px;
+}
+
+.back-link {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #0066cc;
+}
+
+/* Main content - 2 column layout */
+.property-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Gallery section on the left */
+.gallery-section {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Main image container */
+.main-image-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.main-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Gallery navigation arrows */
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-nav:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.gallery-nav.prev {
+    left: 10px;
+    border-radius: 50%;
+}
+
+.gallery-nav.next {
+    right: 10px;
+    border-radius: 50%;
+}
+
+/* Image counter badge */
+.image-counter {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Click to expand hint */
+.expand-hint {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* Thumbnails row */
+.thumbnails {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    overflow-x: auto;
+    background: #f8f9fa;
+}
+
+.thumbnail {
+    flex-shrink: 0;
+    width: 80px;
+    height: 60px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    transition: border-color 0.2s;
+}
+
+.thumbnail:hover {
+    border-color: #0066cc;
+}
+
+.thumbnail.active {
+    border-color: #003366;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Info section on the right */
+.info-section {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    height: fit-content;
+}
+
+.info-section.dragging {
+    cursor: grabbing;
+}
+
+.info-header {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.property-price {
+    font-size: 2rem;
+    color: #003366;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.price-guide {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.property-address {
+    font-size: 1.25rem;
+    margin: 12px 0 4px;
+}
+
+.property-location-detail {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Key features grid */
+.key-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.feature-icon {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.feature-label {
+    font-size: 0.75rem;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.feature-value {
+    font-weight: 600;
+    color: #333;
+}
+
+.property-summary {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Action buttons */
+.action-buttons {
+    text-align: center;
+}
+
+.add-fav-btn.large {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1.1rem;
+}
+
+.drag-hint-text {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* Tabs section */
+.tabs-section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* React-tabs styling */
+.react-tabs__tab-list {
+    display: flex;
+    border-bottom: 2px solid #e9ecef;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #f8f9fa;
+}
+
+.react-tabs__tab {
+    flex: 1;
+    padding: 16px 24px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    color: #666;
+    border: none;
+    background: transparent;
+    transition: all 0.2s;
+}
+
+.react-tabs__tab:hover {
+    color: #003366;
+    background: #e9ecef;
+}
+
+.react-tabs__tab--selected {
+    color: #003366;
+    background: white;
+    border-bottom: 3px solid #003366;
+}
+
+.react-tabs__tab-panel {
+    display: none;
+}
+
+.react-tabs__tab-panel--selected {
+    display: block;
+}
+
+/* Tab content area */
+.tab-content {
+    padding: 24px;
+}
+
+.tab-content h3 {
+    color: #003366;
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+}
+
+/* Description tab */
+.long-description {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.property-details-list {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.property-details-list h4 {
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.property-details-list ul {
+    list-style: none;
+}
+
+.property-details-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.property-details-list li:last-child {
+    border-bottom: none;
+}
+
+/* Floor plan tab */
+.floorplan-container {
+    text-align: center;
+}
+
+.floorplan-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Map tab */
+.map-address {
+    margin-bottom: 16px;
+    color: #666;
+}
+
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-placeholder {
+    background: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #666;
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2001;
+}
+
+.lightbox-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    max-height: 70%;
+}
+
+.lightbox-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.lightbox-nav {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 3rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.lightbox-nav:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-counter {
+    color: white;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.lightbox-thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    overflow-x: auto;
+    max-width: 90%;
+    padding: 10px 0;
+}
+
+.lightbox-thumb {
+    width: 60px;
+    height: 45px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    opacity: 0.6;
+    transition: all 0.2s;
+}
+
+.lightbox-thumb:hover {
+    opacity: 1;
+}
+
+.lightbox-thumb.active {
+    border-color: white;
+    opacity: 1;
+}
+
+.lightbox-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tablet adjustments */
+@media screen and (max-width: 1024px) {
+    .property-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-img {
+        height: 350px;
+    }
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .property-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .main-img {
+        height: 250px;
+    }
+    
+    .gallery-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    
+    .thumbnails {
+        padding: 8px;
+        gap: 6px;
+    }
+    
+    .thumbnail {
+        width: 60px;
+        height: 45px;
+    }
+    
+    .info-section {
+        padding: 16px;
+    }
+    
+    .property-price {
+        font-size: 1.5rem;
+    }
+    
+    .key-features {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    /* Tabs adjustments */
+    .react-tabs__tab-list {
+        flex-wrap: wrap;
+    }
+    
+    .react-tabs__tab {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .tab-content {
+        padding: 16px;
+    }
+    
+    /* Lightbox adjustments */
+    .lightbox-nav {
+        font-size: 2rem;
+        padding: 10px;
+    }
+    
+    .lightbox-thumbnails {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .property-price {
+        font-size: 1.3rem;
+    }
+    
+    .main-img {
+        height: 200px;
+    }
+}
