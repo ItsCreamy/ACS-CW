@@ -7,10 +7,10 @@ function Footer() {
         <footer className="app-footer">
             <div className="footer-content">
                 <p className="copyright">
-                    © 2026 Estate Agent Pro. All rights reserved.
+                    © 2026 Property Pro. All rights reserved.
                 </p>
                 <p className="footer-note">
-                    Property search application built with React.
+                    Property search application.
                 </p>
             </div>
         </footer>
