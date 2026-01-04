@@ -89,3 +89,48 @@ acs-cw-web/
 ├── package.json # Dependencies and scripts
 ├── vite.config.js # Vite configuration
 └── README.md # This file
+
+## 🛠️ Technologies
+
+### Core
+
+- **React 18** - UI framework
+- **Vite** - Build tool and dev server
+- **React Router DOM** - Client-side routing
+
+### UI Components
+
+- **react-select** - Enhanced select dropdowns
+- **react-datepicker** - Date picker widgets
+- **rc-slider** - Price range slider
+- **react-tabs** - Tabbed content
+
+### Drag & Drop
+
+- **react-dnd** - Drag and drop framework
+- **react-dnd-html5-backend** - HTML5 backend for drag
+
+### Security
+
+- **DOMPurify** - XSS protection/HTML sanitization
+
+### Testing
+
+- **Jest** - Test runner
+- **@testing-library/react** - React testing utilities
+- **@testing-library/jest-dom** - DOM matchers
+
+## 🎨 Design Decisions
+
+### Responsive Layout Justification
+
+- **Desktop (>1024px)**: Three-column grid layout maximizes screen real estate
+- **Tablet (768-1024px)**: Filters and favorites share left column, results take full right
+- **Mobile (<768px)**: Single column with horizontal scrollable favorites bar
+
+### React Widgets Choice
+
+- **react-select**: Provides accessible, customizable dropdowns with search
+- **react-datepicker**: Intuitive calendar widget with date range support
+- **rc-slider**: Visual price range slider for better UX than text inputs
+- **react-tabs**: Accessible tab panels for property details
