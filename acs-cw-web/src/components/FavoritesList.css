@@ -88,6 +88,8 @@
     text-decoration: none;
     color: inherit;
     flex: 1;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .favorite-img {
@@ -95,6 +97,7 @@
     height: 45px;
     object-fit: cover;
     border-radius: 4px;
+    flex-shrink: 0;
 }
 
 .favorite-info {
