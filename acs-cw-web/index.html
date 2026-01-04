@@ -1,13 +1,73 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- 
+      Content Security Policy (CSP) - Security measure against XSS attacks
+      - default-src 'self': Only allow resources from the same origin by default
+      - script-src 'self': Only allow scripts from the same origin (Vite handles inline scripts in dev)
+      - style-src 'self' 'unsafe-inline': Allow styles from same origin and inline styles (needed for React widgets)
+      - img-src 'self' data: https:: Allow images from same origin, data URIs, and HTTPS sources
+      - font-src 'self' https:: Allow fonts from same origin and HTTPS sources
+      - connect-src 'self' https:: Allow API connections to same origin and HTTPS sources
+      - frame-src https://www.google.com: Allow Google Maps iframes only
+      - object-src 'none': Disallow plugins like Flash
+      - base-uri 'self': Restrict base tag to same origin
+      - form-action 'self': Restrict form submissions to same origin
+    -->
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; 
+                   script-src 'self' 'unsafe-inline' 'unsafe-eval'; 
+                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+                   img-src 'self' data: https: blob:; 
+                   font-src 'self' https://fonts.gstatic.com; 
+                   connect-src 'self' https:; 
+                   frame-src https://www.google.com https://maps.google.com; 
+                   object-src 'none'; 
+                   base-uri 'self'; 
+                   form-action 'self';">
+    
+    <!-- Character encoding -->
     <meta charset="UTF-8" />
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!-- Viewport for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>acs-cw-web</title>
+    
+    <!-- Page title -->
+    <title>Estate Agent Pro - Property Search</title>
+    
+    <!-- Meta description for SEO -->
+    <meta name="description" content="Search properties for sale including houses and flats. Filter by price, bedrooms, location and more." />
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#003366" />
+    
+    <!-- Prevent caching of sensitive data -->
+    <meta http-equiv="Cache-Control" content="no-store" />
+    
+    <!-- Google Fonts - Roboto for professional look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- 
+      Noscript fallback for users with JavaScript disabled
+      Provides accessible message
+    -->
+    <noscript>
+      <div style="padding: 20px; text-align: center; font-family: sans-serif;">
+        <h1>JavaScript Required</h1>
+        <p>Please enable JavaScript to use Estate Agent Pro property search application.</p>
+      </div>
+    </noscript>
+    
+    <!-- React application root -->
     <div id="root"></div>
+    
+    <!-- Main application script (handled by Vite) -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
