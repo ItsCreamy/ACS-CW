@@ -1,0 +1,230 @@
+/* 
+   PropertyCard.css - Styles for property cards
+   These cards show up in the search results
+*/
+
+/* Main card container */
+.property-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    cursor: grab;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Hover effect - card lifts up */
+.property-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* When dragging the card */
+.property-card.dragging {
+    cursor: grabbing;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Orange border when card is in favorites */
+.property-card.is-favorite {
+    border: 2px solid #ff6b35;
+}
+
+/* Heart icon badge in top right corner */
+.favorite-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff6b35;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container at top of card */
+.card-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Property image */
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.property-card:hover .card-img {
+    transform: scale(1.05);
+}
+
+/* Type badge (House, Flat, etc) */
+.property-type-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: #003366;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Card content area */
+.card-details {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Price display */
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #003366;
+    margin-bottom: 4px;
+}
+
+/* Property location */
+.property-location {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Stats row (bedrooms, bathrooms) */
+.property-stats {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.stat-icon {
+    font-size: 1rem;
+}
+
+/* Short description */
+.property-description {
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Date added text */
+.date-added {
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 12px;
+}
+
+/* Buttons at bottom of card */
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+/* View details button */
+.view-btn {
+    flex: 1;
+    display: inline-block;
+    background: #003366;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.view-btn:hover {
+    background: #004080;
+}
+
+/* Add to favorites button */
+.add-fav-btn {
+    background: #fff;
+    color: #ff6b35;
+    border: 2px solid #ff6b35;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.add-fav-btn:hover:not(:disabled) {
+    background: #ff6b35;
+    color: white;
+}
+
+.add-fav-btn.already-added {
+    background: #ff6b35;
+    color: white;
+    cursor: default;
+}
+
+.add-fav-btn:disabled {
+    opacity: 0.8;
+}
+
+/* Drag hint text at bottom */
+.drag-hint {
+    background: #f8f9fa;
+    padding: 8px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #999;
+    border-top: 1px solid #eee;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+    .card-img {
+        height: 180px;
+    }
+    
+    .card-actions {
+        flex-direction: column;
+    }
+    
+    /* Hide drag hint on touch devices */
+    .drag-hint {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .price {
+        font-size: 1.25rem;
+    }
+}
