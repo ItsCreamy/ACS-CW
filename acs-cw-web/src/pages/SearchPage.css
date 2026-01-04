@@ -11,11 +11,6 @@
     align-items: start;
 }
 
-/* Sidebars */
-.sidebar-left,
-.sidebar-right {
-    /* Remove sticky - let page scroll naturally */
-}
 
 /* Results section in the middle */
 .results-section {
