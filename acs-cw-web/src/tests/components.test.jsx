@@ -8,6 +8,12 @@ import { BrowserRouter } from 'react-router-dom';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { FavoritesProvider } from '../context/FavoritesContext';
+
+// Mock the imagePath utility to avoid import.meta issues in Jest
+jest.mock('../utils/imagePath', () => ({
+    getImagePath: (path) => path
+}));
+
 import FavoritesList from '../components/FavoritesList';
 
 // Wrapper with all providers
