@@ -5,6 +5,15 @@ import { TextEncoder, TextDecoder } from 'util';
 global.TextEncoder = TextEncoder;
 global.TextDecoder = TextDecoder;
 
+// Mock import.meta.env for Vite compatibility
+global.import = {
+    meta: {
+        env: {
+            BASE_URL: '/'
+        }
+    }
+};
+
 // Mock window.matchMedia for components that use media queries
 Object.defineProperty(window, 'matchMedia', {
     writable: true,

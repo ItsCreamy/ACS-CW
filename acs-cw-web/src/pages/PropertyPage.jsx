@@ -7,14 +7,8 @@ import DOMPurify from 'dompurify';
 import 'react-tabs/style/react-tabs.css';
 import propertiesData from '../data/properties.json';
 import { useFavorites } from '../context/FavoritesContext';
+import { getImagePath } from '../utils/imagePath';
 import './PropertyPage.css';
-
-// Helper to get correct image path with base URL
-function getImagePath(path) {
-    const base = import.meta.env.BASE_URL || '/';
-    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-    return base + cleanPath;
-}
 
 function PropertyPage() {
     const { id } = useParams();

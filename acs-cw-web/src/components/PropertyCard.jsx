@@ -3,15 +3,8 @@ import { Link } from 'react-router-dom';
 import { useDrag } from 'react-dnd';
 import { useFavorites } from '../context/FavoritesContext';
 import DOMPurify from 'dompurify';
+import { getImagePath } from '../utils/imagePath';
 import './PropertyCard.css';
-
-// Helper to get correct image path with base URL
-function getImagePath(path) {
-    const base = import.meta.env.BASE_URL || '/';
-    // Remove leading slash from path if base already ends with /
-    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
-    return base + cleanPath;
-}
 
 function PropertyCard({ property }) {
     const { addFavorite, isFavorite } = useFavorites();
