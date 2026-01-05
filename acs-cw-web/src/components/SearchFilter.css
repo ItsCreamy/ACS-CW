@@ -91,6 +91,22 @@
     box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
 }
 
+/* Postcode input styling */
+.postcode-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.postcode-input:focus {
+    border-color: #003366;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
+}
+
 /* Search and reset buttons */
 .button-group {
     display: flex;

@@ -13,14 +13,7 @@ const typeOptions = [
     { value: 'Flat', label: 'Flat' }
 ];
 
-// Postcode area options
-const postcodeOptions = [
-    { value: '', label: 'Any Area' },
-    { value: 'BR1', label: 'BR1 - Bromley' },
-    { value: 'NW1', label: 'NW1 - Camden/Regent\'s Park' },
-    { value: 'SE1', label: 'SE1 - Southbank/Borough' },
-    { value: 'SW1', label: 'SW1 - Chelsea/Westminster' }
-];
+
 
 // Minimum bedroom options
 const bedroomOptions = [
@@ -217,13 +210,13 @@ function SearchFilter({ filters, setFilters, handleSearch }) {
             {/* Postcode Area Filter */}
             <div className="form-group">
                 <label htmlFor="postcode-area">Postcode Area:</label>
-                <Select 
-                    inputId="postcode-area"
-                    options={postcodeOptions}
-                    onChange={function(opt) { handleChange('postcode', opt.value); }}
-                    value={postcodeOptions.find(function(opt) { return opt.value === filters.postcode; })}
-                    styles={selectStyles}
-                    classNamePrefix="react-select"
+                <input
+                    type="text"
+                    id="postcode-area"
+                    className="postcode-input"
+                    placeholder="e.g. BR1, SE1, NW1"
+                    value={filters.postcode}
+                    onChange={function(e) { handleChange('postcode', e.target.value.toUpperCase()); }}
                 />
             </div>
 

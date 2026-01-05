@@ -14,7 +14,7 @@ function Navbar() {
                 {/* Logo and site name */}
                 <Link to="/" className="logo-link">
                     <h1 className="app-title">
-                        <span className="logo-icon">🏠</span>
+                        <span className="logo-icon">💢</span>
                         Property Pro
                     </h1>
                 </Link>
