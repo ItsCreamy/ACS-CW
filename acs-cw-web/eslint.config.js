@@ -26,4 +26,23 @@ export default defineConfig([
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
     },
   },
+  // Add Jest globals for test files
+  {
+    files: ['**/*.test.{js,jsx}', '**/tests/**/*.{js,jsx}', '**/setupTests.js'],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+        describe: 'readonly',
+        test: 'readonly',
+        expect: 'readonly',
+        it: 'readonly',
+        beforeEach: 'readonly',
+        afterEach: 'readonly',
+        beforeAll: 'readonly',
+        afterAll: 'readonly',
+        jest: 'readonly',
+        global: 'readonly',
+      },
+    },
+  },
 ])

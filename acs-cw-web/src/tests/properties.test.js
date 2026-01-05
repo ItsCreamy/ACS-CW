@@ -24,7 +24,7 @@ describe('Properties Data', () => {
                 'floorPlan', 'mapUrl'
             ];
 
-            propertiesData.forEach((property, index) => {
+            propertiesData.forEach((property) => {
                 requiredFields.forEach(field => {
                     expect(property).toHaveProperty(field);
                 });
