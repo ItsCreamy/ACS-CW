@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDrop } from 'react-dnd';
 import { useFavorites } from '../context/FavoritesContext';
+import { getImagePath } from '../utils/imagePath';
 import './FavoritesList.css';
 
 function FavoritesList() {
@@ -34,7 +35,7 @@ function FavoritesList() {
             <div className="favorites-header">
                 <h3>★ Favorites ({favorites.length})</h3>
                 {favorites.length > 0 && (
-                    <button 
+                    <button
                         className="clear-btn" 
                         onClick={clearFavorites}
                         title="Clear all favorites"
@@ -56,7 +57,7 @@ function FavoritesList() {
                             <li key={property.id} className="favorite-item">
                                 <Link to={'/property/' + property.id} className="favorite-link">
                                     <img 
-                                        src={property.images[0]} 
+                                        src={getImagePath(property.images[0])} 
                                         alt={property.type}
                                         className="favorite-img"
                                     />
