@@ -13,15 +13,14 @@
       "tenure": "Freehold",
       "councilTaxBand": "E",
       "images": [
-        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800",
-        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800",
-        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800",
-        "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800",
-        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
-        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800"
+        "/images/house-front1.jpeg",
+        "/images/home1.jpeg",
+        "/images/home2.jpeg",
+        "/images/home3.jpeg",
+        "/images/home4.jpeg",
+        "/images/home5.jpeg"
       ],
-      "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+      "floorPlan": "/images/floor-plan-house.png",
       "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19926.49548483569!2d0.063!3d51.393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIzJzM0LjgiTiAwwrAwNCcwMC4wIkU!5e0!3m2!1sen!2suk!4v1600000000000!5m2!1sen!2suk"
   },
   {
@@ -38,15 +37,14 @@
       "tenure": "Freehold",
       "councilTaxBand": "C",
       "images": [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
-        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-        "https://images.unsplash.com/photo-1630699144867-37acec97df5a?w=800",
-        "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=800",
-        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800",
-        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800"
+        "/images/flat-front1.jpeg",
+        "/images/flat1.jpeg",
+        "/images/flat2.jpeg",
+        "/images/flat3.jpeg",
+        "/images/flat4.jpeg",
+        "/images/flat5.jpeg"
       ],
-      "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+      "floorPlan": "/images/floor-plan-flat.png",
       "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19928.123456!2d0.058!3d51.385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDIzJzEwLjAiTiAwwrAwMyczMC4wIkU!5e0!3m2!1sen!2suk!4v1600000000000!5m2!1sen!2suk"
   },
   {
@@ -63,16 +61,14 @@
     "tenure": "Freehold",
     "councilTaxBand": "G",
     "images": [
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
-      "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800",
-      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800",
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800",
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800"
+      "/images/house-front2.jpeg",
+      "/images/home1.jpeg",
+      "/images/home2.jpeg",
+      "/images/home3.jpeg",
+      "/images/home6.jpeg",
+      "/images/home7.jpeg"
     ],
-    "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+    "floorPlan": "/images/floor-plan-house.png",
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.9876543210!2d0.0189!3d51.3987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a9e1234567!2sBromley%20South!5e0!3m2!1sen!2suk!4v1234567890"
   },
   {
@@ -89,16 +85,14 @@
     "tenure": "Leasehold (95 years remaining)",
     "councilTaxBand": "C",
     "images": [
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800",
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
-      "https://images.unsplash.com/photo-1630699144867-37acec97df5a?w=800",
-      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=800",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800"
+      "/images/flat-front1.jpeg",
+      "/images/flat6.jpeg",
+      "/images/flat7.jpeg",
+      "/images/flat8.jpeg",
+      "/images/flat9.jpeg",
+      "/images/flat1.jpeg"
     ],
-    "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+    "floorPlan": "/images/floor-plan-flat.png",
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.1234567890!2d-0.1478!3d51.5256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad1234567!2sRegent%27s%20Park!5e0!3m2!1sen!2suk!4v1234567890"
   },
   {
@@ -115,16 +109,14 @@
     "tenure": "Freehold",
     "councilTaxBand": "F",
     "images": [
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800",
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800",
-      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
-      "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800"
+      "/images/house-front3.jpeg",
+      "/images/home4.jpeg",
+      "/images/home5.jpeg",
+      "/images/home6.jpeg",
+      "/images/home7.jpeg",
+      "/images/home3.jpeg"
     ],
-    "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+    "floorPlan": "/images/floor-plan-house.png",
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5678901234!2d-0.1089!3d51.5064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c1234567!2sSouthbank!5e0!3m2!1sen!2suk!4v1234567890"
   },
   {
@@ -141,16 +133,14 @@
     "tenure": "Leasehold (150 years remaining)",
     "councilTaxBand": "E",
     "images": [
-      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=800",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800",
-      "https://images.unsplash.com/photo-1630699144867-37acec97df5a?w=800",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800",
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+      "/images/flat-front1.jpeg",
+      "/images/flat2.jpeg",
+      "/images/flat3.jpeg",
+      "/images/flat4.jpeg",
+      "/images/flat5.jpeg",
+      "/images/flat6.jpeg"
     ],
-    "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+    "floorPlan": "/images/floor-plan-flat.png",
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.8765432109!2d-0.0832!3d51.5012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d1234567!2sBorough!5e0!3m2!1sen!2suk!4v1234567890"
   },
   {
@@ -167,16 +157,14 @@
     "tenure": "Freehold",
     "councilTaxBand": "H",
     "images": [
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
-      "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800",
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800",
-      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800",
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800"
+      "/images/house-front4.jpeg",
+      "/images/home1.jpeg",
+      "/images/home2.jpeg",
+      "/images/home4.jpeg",
+      "/images/home5.jpeg",
+      "/images/home6.jpeg"
     ],
-    "floorPlan": "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=800",
+    "floorPlan": "/images/floor-plan-house.png",
     "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.2345678901!2d-0.1567!3d51.4923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760521234567!2sChelsea!5e0!3m2!1sen!2suk!4v1234567890"
   }
 ]
