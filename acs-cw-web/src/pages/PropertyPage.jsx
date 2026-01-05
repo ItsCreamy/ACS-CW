@@ -9,6 +9,13 @@ import propertiesData from '../data/properties.json';
 import { useFavorites } from '../context/FavoritesContext';
 import './PropertyPage.css';
 
+// Helper to get correct image path with base URL
+function getImagePath(path) {
+    const base = import.meta.env.BASE_URL || '/';
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    return base + cleanPath;
+}
+
 function PropertyPage() {
     const { id } = useParams();
     const { addFavorite, isFavorite } = useFavorites();
@@ -112,7 +119,7 @@ function PropertyPage() {
                         tabIndex={0}
                     >
                         <img 
-                            src={property.images[selectedImageIndex]} 
+                            src={getImagePath(property.images[selectedImageIndex])} 
                             alt={`${property.type} in ${property.location}`}
                             className="main-img"
                         />
@@ -150,7 +157,7 @@ function PropertyPage() {
                                 onClick={() => setSelectedImageIndex(index)}
                             >
                                 <img 
-                                    src={img} 
+                                    src={getImagePath(img)} 
                                     alt={`Thumbnail ${index + 1}`}
                                     loading="lazy"
                                 />
@@ -258,7 +265,7 @@ function PropertyPage() {
                             <h3>Floor Plan</h3>
                             <div className="floorplan-container">
                                 <img 
-                                    src={property.floorPlan} 
+                                    src={getImagePath(property.floorPlan)} 
                                     alt={`Floor plan for ${property.location}`}
                                     className="floorplan-img"
                                 />
@@ -320,7 +327,7 @@ function PropertyPage() {
                         </button>
                         
                         <img 
-                            src={property.images[selectedImageIndex]} 
+                            src={getImagePath(property.images[selectedImageIndex])} 
                             alt={`${property.type} in ${property.location}`}
                             className="lightbox-img"
                         />

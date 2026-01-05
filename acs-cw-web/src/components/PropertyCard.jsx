@@ -5,6 +5,14 @@ import { useFavorites } from '../context/FavoritesContext';
 import DOMPurify from 'dompurify';
 import './PropertyCard.css';
 
+// Helper to get correct image path with base URL
+function getImagePath(path) {
+    const base = import.meta.env.BASE_URL || '/';
+    // Remove leading slash from path if base already ends with /
+    const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+    return base + cleanPath;
+}
+
 function PropertyCard({ property }) {
     const { addFavorite, isFavorite } = useFavorites();
     
@@ -69,7 +77,7 @@ function PropertyCard({ property }) {
             {/* Property Image */}
             <div className="card-image-container">
                 <img 
-                    src={property.images[0]} 
+                    src={getImagePath(property.images[0])} 
                     alt={property.type + ' in ' + property.location}
                     className="card-img"
                 />
